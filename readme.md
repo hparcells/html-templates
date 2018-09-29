@@ -1,4 +1,9 @@
 # HTML Templates
+![npm](https://img.shields.io/npm/v/html-templates.svg)
+[![npm](https://img.shields.io/npm/dt/reputation-core.svg)](https://www.npmjs.com/package/html-templates)
+![license](https://img.shields.io/github/license/hparcells/html-templates.svg)
+![GitHub issues](https://img.shields.io/github/issues/hparcells/html-templates.svg)
+
 Simple tool to define and reuse snippets of HTML in other files.
 
 `npm i html-templates -g`
