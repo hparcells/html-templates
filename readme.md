@@ -53,12 +53,12 @@ where you placed the include statement.
 
 ### {less "filename.less"}
 Compiles the [LESS](http://lesscss.org/) file to `filename.css`
-and places a css `<link>` tag where you placed the less
+and places a CSS `<link>` tag where you placed the less
 statement.
 
-### {sass "filename.less"}
-Compiles the [sass](https://sass-lang.com/) file to `filename.css`
-and places a css `<link>` tag where you placed the less
+### {sass "filename.scss"}
+Compiles the [SASS](https://sass-lang.com/) file to `filename.css`
+and places a CSS `<link>` tag where you placed the less
 statement.
 
 ### {markdown "filename.md"}
