@@ -1,4 +1,7 @@
 # HTML Templates
+![status](https://img.shields.io/badge/status-completed-brightgreen.svg)
+![maintained](https://img.shields.io/badge/maintained-no%20(as%20of%202018)-red.svg)
+
 ![npm](https://img.shields.io/npm/v/html-templates.svg)
 [![npm](https://img.shields.io/npm/dt/reputation-core.svg)](https://www.npmjs.com/package/html-templates)
 ![license](https://img.shields.io/github/license/hparcells/html-templates.svg)
