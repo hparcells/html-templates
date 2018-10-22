@@ -2,10 +2,15 @@
 ![status](https://img.shields.io/badge/status-completed-brightgreen.svg)
 ![maintained](https://img.shields.io/badge/maintained-no%20(as%20of%202018)-red.svg)
 
+[![GitHub issues](https://img.shields.io/github/issues/hparcells/html-templates.svg)](https://github.com/hparcells/html-templates)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/hparcells/html-templates.svg)](https://github.com/hparcells/html-templates)
+![license](https://img.shields.io/github/license/hparcells/html-templates.svg)
+
 ![npm](https://img.shields.io/npm/v/html-templates.svg)
 [![npm](https://img.shields.io/npm/dt/reputation-core.svg)](https://www.npmjs.com/package/html-templates)
-![license](https://img.shields.io/github/license/hparcells/html-templates.svg)
-![GitHub issues](https://img.shields.io/github/issues/hparcells/html-templates.svg)
+
+[![dependencies Status](https://david-dm.org/hparcells/html-templates/status.svg)](https://david-dm.org/hparcells/html-templates)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7446e2941dac47a690fe34c98db8c3b0)](https://www.codacy.com/app/hparcells/html-templates?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hparcells/html-templates&amp;utm_campaign=Badge_Grade)
 
 Simple tool to define and reuse snippets of HTML in other files.
 
