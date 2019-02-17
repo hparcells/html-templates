@@ -1,0 +1,104 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "HTML Templates\n\u00b6\n\n\nSimple tool to define and reuse snippets of HTML in other files.\n\n\nInstallation\n\u00b6\n\n\nTo download and use, run \nnpm i html-templates -g\n with NPM.\n\n\nUsage\n\u00b6\n\n\nTo see how to use, please visit the \nHTML Tag\n or the \nSpecial Tags\n for LESS, SASS / SCSS, and Showdown.\n\n\nCompleted Project\n\u00b6\n\n\nThe completed status of this project means I will not be actively developing this, and I will not be fixing small bugs, and responding to pull requests and issues represented by the maintained badge.",
+            "title": "Home"
+        },
+        {
+            "location": "/#html-templates",
+            "text": "Simple tool to define and reuse snippets of HTML in other files.",
+            "title": "HTML Templates"
+        },
+        {
+            "location": "/#installation",
+            "text": "To download and use, run  npm i html-templates -g  with NPM.",
+            "title": "Installation"
+        },
+        {
+            "location": "/#usage",
+            "text": "To see how to use, please visit the  HTML Tag  or the  Special Tags  for LESS, SASS / SCSS, and Showdown.",
+            "title": "Usage"
+        },
+        {
+            "location": "/#completed-project",
+            "text": "The completed status of this project means I will not be actively developing this, and I will not be fixing small bugs, and responding to pull requests and issues represented by the maintained badge.",
+            "title": "Completed Project"
+        },
+        {
+            "location": "/usage/html-tag/",
+            "text": "HTML Tag\n\u00b6\n\n\nThe HTML Tag is a way to easily use snippets (templates) of code in other parts of your HTML files. \n\n\nUsage\n\u00b6\n\n\nConfig\n\u00b6\n\n\nTo start, create a file called \nconfig.json\n in your root directory that should look like the following.\n\n\n{\n\n    \n\"source\"\n:\n \n\"src\"\n,\n\n    \n\"templates\"\n:\n \n\"src/templates\"\n,\n\n    \n\"output\"\n:\n \n\"out\"\n\n\n}\n\n\n\n\n\n\nSource is where all your site files go such as HTML files. Templates is where all your templates go to use, and output is where all your compiled HTML files go with your templates inserted.\n\n\nNext create your source and your output folders according to what you named them in your JSON file, and now you are ready to start using templates. \n\n\nCreating and Using Templates\n\u00b6\n\n\nThe below is an example HTML file with a template called nav.\n\n\nFirst you would create your template.\n\n\nsrc/templates/nav.html\n\n\n<\nnav\n \nclass\n=\n\"navbar\"\n>\n\n    \n<\na\n \nhref\n=\n\"/\"\n>\nHome\n</\na\n>\n\n    \n<\na\n \nhref\n=\n\"/usage\"\n>\nUsage\n</\na\n>\n\n    \n<\na\n \nhref\n=\n\"/examples\"\n>\nExamples\n</\na\n>\n\n    \n<\na\n \nhref\n=\n\"/about\"\n>\nAbout\n</\na\n>\n\n\n</\nnav\n>\n\n\n\n\n\n\nNext you would use it in another file.\n\n\nsrc/index.html\n\n\n...\n\n<\nbody\n>\n\n   {include \"nav.html\"}\n   \n<\nh1\n>\nMy Amazing Site\n</\nh1\n>\n\n   ... \n\n</\nbody\n>\n\n...\n\n\n\n\n\nCompiling\n\u00b6\n\n\nYou can now run \nhcc\n in your root directory to \"compile\" your site and include all the templates, which will appear in the output folder. Optionally you can use the \nLive Development Server\n to get changes to your web browser as you edit.",
+            "title": "HTML Tag"
+        },
+        {
+            "location": "/usage/html-tag/#html-tag",
+            "text": "The HTML Tag is a way to easily use snippets (templates) of code in other parts of your HTML files.",
+            "title": "HTML Tag"
+        },
+        {
+            "location": "/usage/html-tag/#usage",
+            "text": "",
+            "title": "Usage"
+        },
+        {
+            "location": "/usage/html-tag/#config",
+            "text": "To start, create a file called  config.json  in your root directory that should look like the following.  { \n     \"source\" :   \"src\" , \n     \"templates\" :   \"src/templates\" , \n     \"output\" :   \"out\"  }   Source is where all your site files go such as HTML files. Templates is where all your templates go to use, and output is where all your compiled HTML files go with your templates inserted.  Next create your source and your output folders according to what you named them in your JSON file, and now you are ready to start using templates.",
+            "title": "Config"
+        },
+        {
+            "location": "/usage/html-tag/#creating-and-using-templates",
+            "text": "The below is an example HTML file with a template called nav.  First you would create your template.  src/templates/nav.html  < nav   class = \"navbar\" > \n     < a   href = \"/\" > Home </ a > \n     < a   href = \"/usage\" > Usage </ a > \n     < a   href = \"/examples\" > Examples </ a > \n     < a   href = \"/about\" > About </ a >  </ nav >   Next you would use it in another file.  src/index.html  ... < body > \n   {include \"nav.html\"}\n    < h1 > My Amazing Site </ h1 > \n   ...  </ body > \n...",
+            "title": "Creating and Using Templates"
+        },
+        {
+            "location": "/usage/html-tag/#compiling",
+            "text": "You can now run  hcc  in your root directory to \"compile\" your site and include all the templates, which will appear in the output folder. Optionally you can use the  Live Development Server  to get changes to your web browser as you edit.",
+            "title": "Compiling"
+        },
+        {
+            "location": "/usage/special-tags/",
+            "text": "Special Tags\n\u00b6\n\n\nAlong with HTML templates, you can also easily include other files such as CSS preprocessor files such as SASS / SCSS and LESS and markdown files converted via \nShowdown\n.\n\n\nCSS Preprocessors\n\u00b6\n\n\nSASS / SCSS\n\u00b6\n\n\nCompiles the \nSass\n file to \nfilename.css\n and places a CSS \n<link>\n tag where you placed the Sass statement.\n\n\nTo use, place \n\\{\\s\\a\\s\\s\\ \\\"\\f\\i\\l\\e\\n\\a\\m\\e\\.\\s\\c\\s\\s\\\"\\}\n where you want the CSS link tag to go, and the filename is relative to the source folder, and is not \nNOT\n in the templates folder like HTML templates.\n\n\nLess\n\u00b6\n\n\nCompiles the \nLESS\n file to \nfilename.css\n and places a CSS \n<link>\n tag where you placed the LESS statement.\n\n\nTo use, place \n\\{\\l\\e\\s\\s\\ \\\"\\f\\i\\l\\e\\n\\a\\m\\e\\.\\l\\e\\s\\s\\\"\\}\n where you want the CSS link tag to go, and the filename is relative to the source folder, and is not \nNOT\n in the templates folder like HTML templates.\n\n\nMarkdown via Showdown\n\u00b6\n\n\nCompiles the markdown file to HTML and places the contents where you placed the markdown statement.\n\n\nTo use, place \n\\{\\m\\a\\r\\k\\d\\o\\w\\n\\ \\\"\\f\\i\\l\\e\\n\\a\\m\\e\\.\\m\\d\\\"\\}\n where you want the content to go, and the filename is relative to the source folder, and is not \nNOT\n in the templates folder like HTML templates.",
+            "title": "Special Tags"
+        },
+        {
+            "location": "/usage/special-tags/#special-tags",
+            "text": "Along with HTML templates, you can also easily include other files such as CSS preprocessor files such as SASS / SCSS and LESS and markdown files converted via  Showdown .",
+            "title": "Special Tags"
+        },
+        {
+            "location": "/usage/special-tags/#css-preprocessors",
+            "text": "",
+            "title": "CSS Preprocessors"
+        },
+        {
+            "location": "/usage/special-tags/#sass-scss",
+            "text": "Compiles the  Sass  file to  filename.css  and places a CSS  <link>  tag where you placed the Sass statement.  To use, place  \\{\\s\\a\\s\\s\\ \\\"\\f\\i\\l\\e\\n\\a\\m\\e\\.\\s\\c\\s\\s\\\"\\}  where you want the CSS link tag to go, and the filename is relative to the source folder, and is not  NOT  in the templates folder like HTML templates.",
+            "title": "SASS / SCSS"
+        },
+        {
+            "location": "/usage/special-tags/#less",
+            "text": "Compiles the  LESS  file to  filename.css  and places a CSS  <link>  tag where you placed the LESS statement.  To use, place  \\{\\l\\e\\s\\s\\ \\\"\\f\\i\\l\\e\\n\\a\\m\\e\\.\\l\\e\\s\\s\\\"\\}  where you want the CSS link tag to go, and the filename is relative to the source folder, and is not  NOT  in the templates folder like HTML templates.",
+            "title": "Less"
+        },
+        {
+            "location": "/usage/special-tags/#markdown-via-showdown",
+            "text": "Compiles the markdown file to HTML and places the contents where you placed the markdown statement.  To use, place  \\{\\m\\a\\r\\k\\d\\o\\w\\n\\ \\\"\\f\\i\\l\\e\\n\\a\\m\\e\\.\\m\\d\\\"\\}  where you want the content to go, and the filename is relative to the source folder, and is not  NOT  in the templates folder like HTML templates.",
+            "title": "Markdown via Showdown"
+        },
+        {
+            "location": "/usage/live-development-server/",
+            "text": "Live Development Server\n\u00b6\n\n\nUsage\n\u00b6\n\n\nType \nhcc-server\n in the console to start a localhost server on port 8080, where the site will be live updated when you save a source file.\n\n\n\n\nWarning\n\n\nThere is a change with editing a large amount of files that the server could fail and you might have to run \nhcc-server\n again.",
+            "title": "Live Development Server"
+        },
+        {
+            "location": "/usage/live-development-server/#live-development-server",
+            "text": "",
+            "title": "Live Development Server"
+        },
+        {
+            "location": "/usage/live-development-server/#usage",
+            "text": "Type  hcc-server  in the console to start a localhost server on port 8080, where the site will be live updated when you save a source file.   Warning  There is a change with editing a large amount of files that the server could fail and you might have to run  hcc-server  again.",
+            "title": "Usage"
+        }
+    ]
+}
